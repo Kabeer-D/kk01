@@ -1,5 +1,3 @@
-
-
 As a registered user, I want to reset my password using a time-limited email link so that I can regain access securely.
 As a registered user, I want my order to be placed successfully only after payment and address validation so that my purchase is completed safely.
 As a registered user, I want to update editable profile information so that my account details remain accurate.
