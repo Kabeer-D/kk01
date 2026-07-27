@@ -9,7 +9,8 @@ from langchain_groq import ChatGroq
 from langgraph.graph import END, START, StateGraph
 
 
-load_dotenv()
+ENV_FILE = Path(__file__).resolve().with_name(".env")
+load_dotenv(dotenv_path=ENV_FILE, override=True)
 
 if not os.getenv("GROQ_API_KEY"):
     os.environ["GROQ_API_KEY"] = getpass.getpass("Enter your Groq API key: ")
@@ -74,6 +75,10 @@ else:
 CANDIDATE_MODELS = [m.strip() for m in candidate_models_value.split(",") if m.strip()]
 EVALUATION_MODEL = args.evaluation_model or os.getenv("GROQ_EVALUATION_MODEL") or "openai/gpt-oss-120b"
 MODEL_SELECTION_REPORTS = {}
+
+print(f"Loaded env file: {ENV_FILE}")
+print(f"Candidate models from env: {CANDIDATE_MODELS if CANDIDATE_MODELS else 'none'}")
+print(f"Evaluation model from env: {EVALUATION_MODEL}")
 
 
 class QAAgentState(TypedDict):
