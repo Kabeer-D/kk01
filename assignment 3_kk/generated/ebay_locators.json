@@ -1,0 +1,58 @@
+{
+  "search_box": {
+    "name": "Global Search Input",
+    "type": "input",
+    "selector": "#gh-ac",
+    "xpath": "//input[@id='gh-ac']",
+    "description": "Main search textbox located in the header for entering product keywords."
+  },
+  "search_button": {
+    "name": "Global Search Button",
+    "type": "button",
+    "selector": "#gh-btn",
+    "xpath": "//input[@id='gh-btn']",
+    "description": "Button next to the search box that triggers the product search."
+  },
+  "cart_button": {
+    "name": "Cart (Shopping Cart) Link",
+    "type": "link",
+    "selector": "#gh-cart-n",
+    "xpath": "//a[@id='gh-cart-n']",
+    "description": "Link in the header that opens the shopping cart overview."
+  },
+  "sign_in_button": {
+    "name": "Sign In Link",
+    "type": "link",
+    "selector": "#gh-ug",
+    "xpath": "//a[@id='gh-ug']",
+    "description": "Header link that opens the sign\u2011in modal or redirects to the login page."
+  },
+  "account_button": {
+    "name": "My eBay Account Link",
+    "type": "link",
+    "selector": "#gh-eb-My",
+    "xpath": "//a[@id='gh-eb-My']",
+    "description": "Header link that navigates to the user's account dashboard (My eBay)."
+  },
+  "deals_link": {
+    "name": "Deals Link",
+    "type": "link",
+    "selector": "a[data-marko='deals']",
+    "xpath": "//a[contains(text(),'Deals')]",
+    "description": "Top navigation link that leads to the eBay Deals page."
+  },
+  "navigation_menu": {
+    "name": "Main Category Navigation Menu",
+    "type": "menu",
+    "selector": "#gh-sbc",
+    "xpath": "//nav[@id='gh-sbc']",
+    "description": "Horizontal menu under the header containing primary category links (e.g., Electronics, Fashion)."
+  },
+  "product_links": {
+    "name": "Featured Product Links",
+    "type": "link",
+    "selector": ".s-item__link",
+    "xpath": "//a[contains(@class,'s-item__link')]",
+    "description": "Links for individual product tiles displayed on the homepage or search results."
+  }
+}

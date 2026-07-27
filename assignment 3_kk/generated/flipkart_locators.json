@@ -1,0 +1,58 @@
+{
+  "search_box": {
+    "name": "Search Input",
+    "type": "input",
+    "selector": "input[name='q'], input[title='Search for products, brands and more'], input[placeholder='Search for products, brands and more']",
+    "xpath": "//input[@type='text' and (contains(@placeholder, 'Search for products') or @title='Search for products, brands and more')]",
+    "description": "The main text field at the top of the Flipkart homepage where users type product queries."
+  },
+  "search_button": {
+    "name": "Search Button",
+    "type": "button",
+    "selector": "button[type='submit'], button._34RNph, button._2AkmmA",
+    "xpath": "//button[@type='submit' and (contains(@class, '_34RNph') or contains(@class, '_2AkmmA'))]",
+    "description": "Button that triggers the product search after a query is entered in the search box."
+  },
+  "cart_button": {
+    "name": "Cart Icon/Button",
+    "type": "link",
+    "selector": "a[href*='viewcart'], a._3SkBxJ, a._2KpZ6l",
+    "xpath": "//a[contains(@href, 'viewcart') or contains(@class, '_3SkBxJ') or contains(@class, '_2KpZ6l')]",
+    "description": "Link or button that opens the user's shopping cart, usually displayed as a bag icon in the header."
+  },
+  "sign_in_button": {
+    "name": "Sign\u2011In Button",
+    "type": "button",
+    "selector": "a._1_3w1N, button._2KpZ6l._2doB4z, a._2AkmmA",
+    "xpath": "//a[contains(@class, '_1_3w1N') or contains(@class, '_2AkmmA') or //button[contains(@class, '_2KpZ6l')]]",
+    "description": "Button that opens the login modal for existing users."
+  },
+  "account_button": {
+    "name": "Account Dropdown",
+    "type": "button",
+    "selector": "div._1ruvv9, div._3vhnxf, span._2iDkf8",
+    "xpath": "//div[contains(@class, '_1ruvv9') or contains(@class, '_3vhnxf') or //span[contains(@class, '_2iDkf8')]]",
+    "description": "User avatar or name element that expands to show account options after a successful login."
+  },
+  "deals_link": {
+    "name": "Deals / Offers Link",
+    "type": "link",
+    "selector": "a[data-id='deals'], a._6WOcW9, a._2KpZ6l[href*='deals']",
+    "xpath": "//a[contains(@href, 'deals') or @data-id='deals' or contains(@class, '_6WOcW9')]",
+    "description": "Navigation link that directs users to the daily deals or offers page."
+  },
+  "navigation_menu": {
+    "name": "Top Navigation Menu",
+    "type": "container",
+    "selector": "div._1kidJ, nav._1QZ6fM, ul._1xHtJz",
+    "xpath": "//nav[contains(@class, '_1QZ6fM')] | //div[contains(@class, '_1kidJ')] | //ul[contains(@class, '_1xHtJz')]",
+    "description": "Container holding the primary category links (e.g., Electronics, Fashion, Home) displayed horizontally at the top of the page."
+  },
+  "product_links": {
+    "name": "Product Tile Links",
+    "type": "link",
+    "selector": "a._1fQZEK, a._2rpwqI, a.s1Q9rs",
+    "xpath": "//a[contains(@class, '_1fQZEK') or contains(@class, '_2rpwqI') or contains(@class, 's1Q9rs')]",
+    "description": "Links wrapping each product card on the homepage or category pages, leading to the product detail page."
+  }
+}

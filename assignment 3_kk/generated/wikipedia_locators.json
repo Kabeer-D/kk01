@@ -1,0 +1,58 @@
+{
+  "search_box": {
+    "name": "searchInput",
+    "type": "input",
+    "selector": "#searchInput",
+    "xpath": "//input[@id='searchInput']",
+    "description": "Main search input field for entering article titles."
+  },
+  "search_button": {
+    "name": "searchButton",
+    "type": "button",
+    "selector": "button.pure-button-primary-progressive",
+    "xpath": "//button[contains(@class,'pure-button-primary-progressive')]",
+    "description": "Submit button that triggers the search on the Wikipedia homepage."
+  },
+  "cart_button": {
+    "name": "Cart Button",
+    "type": "element",
+    "selector": "",
+    "xpath": "",
+    "description": "No cart functionality exists on Wikipedia."
+  },
+  "sign_in_button": {
+    "name": "js-login",
+    "type": "link",
+    "selector": "#js-login",
+    "xpath": "//a[@id='js-login']",
+    "description": "Link that opens the login page for signing in."
+  },
+  "account_button": {
+    "name": "Account Button",
+    "type": "element",
+    "selector": "",
+    "xpath": "",
+    "description": "Account menu appears only after a user logs in; not present for anonymous visitors."
+  },
+  "deals_link": {
+    "name": "Deals Link",
+    "type": "element",
+    "selector": "",
+    "xpath": "",
+    "description": "Wikipedia does not have a deals or promotions section."
+  },
+  "navigation_menu": {
+    "name": "p-navigation",
+    "type": "nav",
+    "selector": "#p-navigation",
+    "xpath": "//nav[@id='p-navigation']",
+    "description": "Primary site navigation menu containing links such as Main page, Contents, Current events, etc."
+  },
+  "product_links": {
+    "name": "Product Links",
+    "type": "element",
+    "selector": "",
+    "xpath": "",
+    "description": "No product links are present on Wikipedia; field left empty."
+  }
+}

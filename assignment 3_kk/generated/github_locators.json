@@ -1,0 +1,58 @@
+{
+  "search_box": {
+    "name": "searchBox",
+    "type": "input",
+    "selector": "#twotabsearchtextbox",
+    "xpath": "//input[@id='twotabsearchtextbox']",
+    "description": "Main search input field at the top of the Amazon homepage."
+  },
+  "search_button": {
+    "name": "searchSubmit",
+    "type": "button",
+    "selector": "#nav-search-submit-button",
+    "xpath": "//input[@id='nav-search-submit-button']",
+    "description": "Button to submit the search query."
+  },
+  "cart_button": {
+    "name": "navCart",
+    "type": "link",
+    "selector": "#nav-cart",
+    "xpath": "//a[@id='nav-cart']",
+    "description": "Link/button that opens the shopping cart."
+  },
+  "sign_in_button": {
+    "name": "navSignIn",
+    "type": "link",
+    "selector": "#nav-link-accountList",
+    "xpath": "//a[@id='nav-link-accountList']",
+    "description": "Link to the sign\u2011in page (also shows account name when logged in)."
+  },
+  "account_button": {
+    "name": "accountList",
+    "type": "button",
+    "selector": "#nav-link-accountList",
+    "xpath": "//a[@id='nav-link-accountList']",
+    "description": "Dropdown button that reveals account options."
+  },
+  "deals_link": {
+    "name": "deals",
+    "type": "link",
+    "selector": "a[href*='deals']",
+    "xpath": "//a[contains(@href,'/gp/goldbox')]",
+    "description": "Link to the Today's Deals page."
+  },
+  "navigation_menu": {
+    "name": "mainNav",
+    "type": "menu",
+    "selector": "#nav-main",
+    "xpath": "//div[@id='nav-main']",
+    "description": "Top navigation bar containing department links."
+  },
+  "product_links": {
+    "name": "productLink",
+    "type": "link",
+    "selector": "div[data-component-type='s-search-result'] a.a-link-normal.s-no-outline",
+    "xpath": "//div[@data-component-type='s-search-result']//a[contains(@class,'a-link-normal') and contains(@class,'s-no-outline')]",
+    "description": "Links to individual product detail pages in search results or homepage carousels."
+  }
+}

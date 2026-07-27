@@ -1,0 +1,7 @@
+{
+  "healed_locator": {
+    "type": "input",
+    "locator": "input#twotabsearchtextbox",
+    "purpose": "Recovered after failure"
+  }
+}

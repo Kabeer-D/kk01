@@ -1,0 +1,49 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  PYTHON_VERSION: '3.11'
+  GROQ_MODEL: 'openai/gpt-oss-120b'
+  WEBSITE_URL: 'https://www.amazon.com'
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(PYTHON_VERSION)'
+    displayName: 'Use Python $(PYTHON_VERSION)'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+      playwright install chromium
+    displayName: 'Install dependencies'
+
+  - script: |
+      pytest -vv tests/generated --junitxml=test-results/results.xml
+    displayName: 'Run generated tests'
+    env:
+      GROQ_API_KEY: $(GROQ_API_KEY)
+      GROQ_MODEL: $(GROQ_MODEL)
+
+  - script: |
+      python main.py --url "$(WEBSITE_URL)"
+    displayName: 'Run AI automation workflow'
+    env:
+      GROQ_API_KEY: $(GROQ_API_KEY)
+      GROQ_MODEL: $(GROQ_MODEL)
+      WEBSITE_URL: $(WEBSITE_URL)
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/test-results/**/*.xml'
+      testRunTitle: 'Pytest Results'
+    condition: always()
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: 'reports'
+      artifact: 'automation-reports'
+    condition: always()

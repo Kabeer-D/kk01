@@ -1,0 +1,49 @@
+{
+  "total_tests": 7,
+  "passed": 7,
+  "failed": 0,
+  "skipped": 0,
+  "duration": "65s",
+  "status": "SUCCESS",
+  "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\\Users\\kkapdi.ext\\OneDrive - Deloitte (O365D)\\Desktop\\assignment 3_kk\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\kkapdi.ext\\OneDrive - Deloitte (O365D)\\Desktop\\assignment 3_kk\nconfigfile: pytest.ini\nplugins: anyio-4.14.2\ncollecting ... collected 7 items\n\ntests/generated/test_ai_access_account_options.py::test_access_account_options PASSED [ 14%]\ntests/generated/test_ai_add_product_to_cart.py::test_add_product_to_cart PASSED [ 28%]\ntests/generated/test_ai_browse_daily_deals.py::test_browse_daily_deals PASSED [ 42%]\ntests/generated/test_ai_navigate_through_top_categories.py::test_navigate_through_top_categories PASSED [ 57%]\ntests/generated/test_ai_product_search.py::test_product_search PASSED    [ 71%]\ntests/generated/test_ai_user_sign_in.py::test_user_sign_in PASSED        [ 85%]\ntests/generated/test_ai_view_cart_and_proceed_to_checkout.py::test_view_cart_and_proceed_to_checkout PASSED [100%]\n\n- generated xml file: C:\\Users\\kkapdi.ext\\OneDrive - Deloitte (O365D)\\Desktop\\assignment 3_kk\\test-results\\results.xml -\n======================== 7 passed in 65.02s (0:01:05) =========================\n",
+  "stderr": "",
+  "discovered_tests": [
+    "test_ai_access_account_options.py",
+    "test_ai_add_product_to_cart.py",
+    "test_ai_browse_daily_deals.py",
+    "test_ai_navigate_through_top_categories.py",
+    "test_ai_product_search.py",
+    "test_ai_user_sign_in.py",
+    "test_ai_view_cart_and_proceed_to_checkout.py"
+  ],
+  "test_details": [
+    {
+      "test": "tests/generated/test_ai_access_account_options.py::test_access_account_options",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_add_product_to_cart.py::test_add_product_to_cart",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_browse_daily_deals.py::test_browse_daily_deals",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_navigate_through_top_categories.py::test_navigate_through_top_categories",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_product_search.py::test_product_search",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_user_sign_in.py::test_user_sign_in",
+      "status": "PASSED"
+    },
+    {
+      "test": "tests/generated/test_ai_view_cart_and_proceed_to_checkout.py::test_view_cart_and_proceed_to_checkout",
+      "status": "PASSED"
+    }
+  ]
+}

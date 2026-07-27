@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Product Search",
+    "description": "User searches for a product using the main search box and initiates the search.",
+    "steps": [
+      "Locate the search_box element.",
+      "Enter the product name or keywords into the search_box.",
+      "Locate and click the search_button.",
+      "Wait for the search results page to load."
+    ],
+    "priority": "High"
+  },
+  {
+    "name": "User Sign\u2011In",
+    "description": "Existing user logs into their Flipkart account via the sign\u2011in button.",
+    "steps": [
+      "Locate and click the sign_in_button.",
+      "Wait for the login modal to appear.",
+      "Enter email/phone number and password.",
+      "Submit the login form.",
+      "Verify that the account_button appears, indicating a successful login."
+    ],
+    "priority": "High"
+  },
+  {
+    "name": "Add Product to Cart",
+    "description": "User selects a product from search or category results and adds it to the shopping cart.",
+    "steps": [
+      "Perform a product search or navigate via navigation_menu to a category.",
+      "Locate a product_links element for the desired item and click it.",
+      "On the product detail page, locate the 'Add to Cart' button (not provided in hints, but assumed present).",
+      "Click the 'Add to Cart' button.",
+      "Confirm that the cart_button shows the updated item count."
+    ],
+    "priority": "High"
+  },
+  {
+    "name": "View Cart and Proceed to Checkout",
+    "description": "User opens the cart to review items and initiates the checkout process.",
+    "steps": [
+      "Locate and click the cart_button.",
+      "Wait for the cart page to load and verify listed items.",
+      "Click the 'Place Order' or 'Proceed to Checkout' button (assumed present on cart page).",
+      "Verify navigation to the address/checkout page."
+    ],
+    "priority": "High"
+  },
+  {
+    "name": "Browse Daily Deals",
+    "description": "User navigates to the deals/offers section to view discounted products.",
+    "steps": [
+      "Locate and click the deals_link.",
+      "Wait for the deals page to load.",
+      "Optionally scroll through deal tiles and capture product information."
+    ],
+    "priority": "Medium"
+  },
+  {
+    "name": "Navigate Through Top Categories",
+    "description": "User uses the top navigation menu to explore different product categories.",
+    "steps": [
+      "Locate the navigation_menu container.",
+      "Select a category link within the menu (e.g., Electronics, Fashion).",
+      "Click the chosen category link.",
+      "Wait for the category listing page to load."
+    ],
+    "priority": "Medium"
+  },
+  {
+    "name": "Access Account Options",
+    "description": "After signing in, user opens the account dropdown to manage profile, orders, or logout.",
+    "steps": [
+      "Locate and click the account_button.",
+      "Wait for the dropdown menu to appear.",
+      "Select an option such as 'My Orders', 'Profile', or 'Logout'.",
+      "Verify the resulting page or action."
+    ],
+    "priority": "Low"
+  }
+]
